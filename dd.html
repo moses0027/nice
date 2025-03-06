@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>飛機意見調查表</title>
+</head>
+<body>
+    <h1>飛機意見調查表</h1>
+    <form action="/test.aspx" method="post">
+        <label for="email">電子郵件：</label>
+        <input type="email" id="email" name="email"><br><br>
+
+        <label for="staff">你最喜歡的飛機類型：</label>
+        <input type="text" id="staff" name="staff"><br><br>
+
+        <label for="flightNumber">你的名字：</label>
+        <input type="text" id="flightNumber" name="flightNumber"><br><br>
+
+        <label for="cuisine">你喜歡哪種飛機呢？</label><br>
+        <select id="cuisine" name="cuisine" size="4" multiple>
+            <optgroup label="客機">
+                <option value="747">波鷹</option>
+                <option value="A320">空中巴士</option>
+                <option value="ATR42">ATR 42-200</option>
+            </optgroup>
+            <optgroup label="私人客機">
+                <option value="加拿大">龐巴迪</option>
+                <option value="美國">西銳</option>
+                <option value="法國">達索</option>
+            </optgroup>
+        </select><br><br>
+
+        <label for="features">你最喜歡的飛機特色是什麼？</label><br>
+        <select id="features" name="features" size="4" multiple>
+            <option value="service">乘坐體驗</option>
+            <option value="environment">機組品質</option>
+            <option value="food_quality">售後服務</option>
+            <option value="price">價格合理</option>
+        </select><br><br>
+
+        <label for="notification">其他飛機建議或備註：</label><br>
+        <textarea id="notification" name="notification" rows="4" cols="50"></textarea><br><br>
+
+        <input type="submit" value="提交">
+        <input type="reset" value="重設">
+    </form>
+</body>
+</html>
